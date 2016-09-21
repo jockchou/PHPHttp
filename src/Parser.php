@@ -3,11 +3,12 @@
 /**
  * JockChou (http://jockchou.github.io)
  *
- * @link      https://github.com/jockchou
+ * @link      http://www.ietf.org/rfc/rfc2616.txt
  * @copyright Copyright (c) 2016 JockChou
  * @license   https://github.com/jockchou/PHPHttp/blob/master/LICENSE (Apache License)
  */
-//http://www.ietf.org/rfc/rfc2616.txt
+namespace PHPHttp;
+
 class Parser implements ParserInterface
 {
 
@@ -27,10 +28,13 @@ class Parser implements ParserInterface
         $request = [];
         $files = [];
 
-        list($headerContent, $bodyContent) = explode('\r\n\r\n', $input);
-        $headerLines = explode('\r\n', $headerContent);
-        list($method, $uri, $protocolVersion) = explode('\r\n', $headerLines[0]);
+        $packet = explode("\r\n\r\n", $input);
+        $headerContent = $packet[0];
+        $bodyContent = isset($packet[1]) ? $packet[1] : "";
+        $headerLines = explode("\r\n", $headerContent);
 
+        list($method, $uri, $protocolVersion) = explode(" ", $headerLines[0]);
+        
         $server['SERVER_PROTOCOL'] = $protocolVersion;
         $server['REQUEST_URI'] = $uri;
         $server['REQUEST_METHOD'] = $method;

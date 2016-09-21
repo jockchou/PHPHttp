@@ -1,5 +1,4 @@
 <?php
-
 /**
  * JockChou (http://jockchou.github.io)
  *
@@ -7,15 +6,11 @@
  * @copyright Copyright (c) 2016 JockChou
  * @license   https://github.com/jockchou/PHPHttp/blob/master/LICENSE (Apache License)
  */
-namespace PHPHttp;
 
-interface ParserInterface
-{
+// Set timezone
+date_default_timezone_set('PRC');
 
-    /**
-     * @param $input
-     * @param null $context
-     * @return mixed
-     */
-    public function parseHttp($input, $context = null);
-}
+$autoloader = require dirname(__DIR__) . '/vendor/autoload.php';
+
+// Register test classes
+$autoloader->addPsr4('PHPHttp\Tests\\', __DIR__);
