@@ -1,0 +1,32 @@
+[HTTP_COOKIE] => Hm_lvt_c77de0b48ddb11b66b0300d7eb53c3bc=1473751526
+[HTTP_ACCEPT_LANGUAGE] => zh-CN,zh;q=0.8,en;q=0.6,und;q=0.4,zh-TW;q=0.2
+[HTTP_ACCEPT_ENCODING] => gzip, deflate, sdch
+[HTTP_REFERER] => http://demo.jockchou.com:8080/
+[HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+[HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36
+[HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+[HTTP_CACHE_CONTROL] => max-age=0
+[HTTP_CONNECTION] => keep-alive
+[HTTP_HOST] => demo.jockchou.com:8080
+[REDIRECT_STATUS] => 200
+[SERVER_NAME] => demo.jockchou.com
+[SERVER_PORT] => 8080
+[SERVER_ADDR] => 127.0.0.1
+[REMOTE_PORT] => 52884
+[REMOTE_ADDR] => 127.0.0.1
+[SERVER_SOFTWARE] => nginx/1.8.0
+[GATEWAY_INTERFACE] => CGI/1.1
+[SERVER_PROTOCOL] => HTTP/1.1
+[DOCUMENT_ROOT] => D:\gitroot\PHPHttp
+[DOCUMENT_URI] => /server.php
+[REQUEST_URI] => /server.php
+[SCRIPT_NAME] => /server.php
+[CONTENT_LENGTH] =>
+[CONTENT_TYPE] =>
+[REQUEST_METHOD] => GET
+[QUERY_STRING] =>
+[SCRIPT_FILENAME] => D:\gitroot\PHPHttp/server.php
+[FCGI_ROLE] => RESPONDER
+[PHP_SELF] => /server.php
+[REQUEST_TIME_FLOAT] => 1474447884.5806
+[REQUEST_TIME] => 1474447884
