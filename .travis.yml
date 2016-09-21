@@ -1,0 +1,13 @@
+sudo: false
+
+language: php
+
+php:
+  - 5.6
+
+before_script:
+  - if [[ "$TRAVIS_PHP_VERSION" == '5.6' ]]; then composer install ; fi
+
+script:
+  - if [[ "$TRAVIS_PHP_VERSION" == '5.6' ]]; then phpunit ; fi
+  
